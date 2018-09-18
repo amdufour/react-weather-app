@@ -1,10 +1,12 @@
 var React = require('react');
 var Home = require('./Home');
+var Header = require('./Header');
 
 class App extends React.Component {
   render() {
     return (
-      <div style={{backgroundImage: 'url("app/assets/pattern.svg")'}}>
+      <div>
+        <Header />
         <Home />
       </div>
     )

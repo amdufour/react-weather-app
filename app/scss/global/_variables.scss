@@ -12,6 +12,7 @@ $textColorPrimary: #555;
 $linkColor: #e84b1f;
 $linkHoverColor: darken($linkColor, 10%);
 
+$orange: #FE6B3A;
 $green: #5cb85c;
 
 // FONT
@@ -20,26 +21,22 @@ $fontSize: 1rem;
 $lineHeight: 1.2;
 $fontWeight: normal;
 /*h1*/
-$h1FontSize: 3.4rem;
-$h1LineHeight: 4rem;
-$h1Color: $textColorPrimary;
+$h1FontSize: 2rem;
+$h1LineHeight: 2.4rem;
+$h1FontWeight: 500;
 /*h2*/
-$h2FontSize: 2.8rem;
-$h2LineHeight: 3.4rem;
-$h2Color: $textColorPrimary;
+$h2FontSize: 1.8rem;
+$h2LineHeight: 2rem;
 /*h3*/
-$h3FontSize: 2rem;
-$h3LineHeight: 2.4rem;
+$h3FontSize: 1.6rem;
+$h3LineHeight: 2rem;
 $h3Color: $textColorPrimary;
 /*h4*/
-$h4FontSize: 1.8rem;
+$h4FontSize: 1.6rem;
 $h4LineHeight: 2rem;
-$h4Color: $textColorPrimary;
 /*h5*/
 $h5FontSize: 1.6rem;
 $h5LineHeight: 2rem;
-$h5Color: $textColorPrimary;
 /*h6*/
 $h6FontSize: 1.6rem;
 $h6LineHeight: 2rem;
-$h6Color: $textColorPrimary;
