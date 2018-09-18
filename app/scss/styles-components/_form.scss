@@ -1,10 +1,3 @@
-.form-home--label {
-  margin: 25px 0;
-  font-size: 45px;
-  font-weight: 100;
-  color: #fff;
-}
-
 .form-input {
   width: 100%;
   max-width: 200px;
@@ -45,22 +38,30 @@
   }
 }
 
-.form-home--input {
-  display: block;
-}
-
-.form-home--button {
-  display: block;
-  margin-top: 10px;
-}
-
 .form-header {
   text-align: right;
+  label {
+    position: absolute;
+    text-indent: -9000em;
+  }
+  .button {
+    margin-left: 10px;
+  }
 }
-.form-header--input,
-.form-header--button {
-  vertical-align: middle;
-}
-.form-header--button {
-  margin-left: 10px;
+
+.form-home {
+  label {
+    margin: 25px 0;
+    font-size: 45px;
+    font-weight: 100;
+    color: #fff;
+  }
+  input,
+  .button {
+    display: block;
+    margin: 0 auto;
+  }
+  .button {
+    margin-top: 10px;
+  }
 }

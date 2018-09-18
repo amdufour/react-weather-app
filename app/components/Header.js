@@ -1,4 +1,5 @@
 var React = require('react');
+var Form = require('./Form');
 
 class Header extends React.Component {
   render() {
@@ -10,21 +11,9 @@ class Header extends React.Component {
               <h1>Tell me the weather</h1>
             </div>
             <div className="col-sm-6">
-              <form
-                className="form-header"
-              >
-              <input
-                id="location-header"
-                className="form-input form-header--input"
-                placeholder="Montreal, Canada"
-                type="text"
-                autoComplete="off"
-              />
-              <button 
-                className="button form-header--button"
-                type="submit"
-              >Get Weather</button>
-              </form>
+              <div className="form-header">
+                <Form />
+              </div>
             </div>
           </div>
         </div>
