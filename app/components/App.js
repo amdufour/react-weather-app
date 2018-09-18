@@ -4,7 +4,9 @@ var Home = require('./Home');
 class App extends React.Component {
   render() {
     return (
-      <Home />
+      <div style={{backgroundImage: 'url("app/assets/pattern.svg")'}}>
+        <Home />
+      </div>
     )
   }
 }

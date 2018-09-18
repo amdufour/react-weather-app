@@ -1,0 +1,257 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+  width: 100%;
+  max-width: $container;
+}
+.container-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
+}
+.col,
+[class^="col-"],
+[class*=" col-"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: $gutter/2;
+  padding-left: $gutter/2;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+.col-10 {
+  flex: 0 0 83%;
+  max-width: 83%;
+}
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+@mixin responsiveGrid($size) {
+  .col-#{$size}-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-#{$size}-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .col-#{$size}-10 {
+    flex: 0 0 83%;
+    max-width: 83%;
+  }
+  .col-#{$size}-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-#{$size}-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-#{$size}-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .col-#{$size}-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-#{$size}-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .col-#{$size}-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-#{$size}-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-#{$size}-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .col-#{$size}-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+}
+@mixin justifyContent($size) {
+  .justify-content-#{$size}-center {
+    justify-content: center !important;
+  }
+}
+@mixin colSizeAuto($size) {
+  .col-#{$size}-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+}
+
+@include responsiveGrid("xs");
+@include justifyContent("xs");
+@include colSizeAuto("xs");
+
+@media (min-width: $xs) {
+  @include responsiveGrid("sm");
+  @include justifyContent("sm");
+  @include colSizeAuto("sm");
+}
+@media (min-width: $sm) {
+  @include responsiveGrid("md");
+  @include justifyContent("md");
+  @include colSizeAuto("md");
+}
+@media (min-width: $md) {
+  @include responsiveGrid("lg");
+  @include justifyContent("lg");
+  @include colSizeAuto("lg");
+}
+
+//OTHERS
+.w-100 {
+  width: 100% !important;
+}
+.align-items-start {
+  align-items: flex-start !important;
+}
+.align-items-center {
+  align-items: center !important;
+}
+.align-items-end {
+  align-items: flex-end !important;
+}
+.align-self-start {
+  align-self: flex-start !important;
+}
+.align-self-center {
+  align-self: center !important;
+}
+.align-self-end {
+  align-self: flex-end !important;
+}
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-end {
+  justify-content: flex-end !important;
+}
+.justify-content-around {
+  justify-content: space-around !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.order-12 {order: 12;}
+.order-11 {order: 11;}
+.order-10 {order: 10;}
+.order-9 {order: 9;}
+.order-8 {order: 8;}
+.order-7 {order: 7;}
+.order-6 {order: 6;}
+.order-5 {order: 5;}
+.order-4 {order: 4;}
+.order-3 {order: 3;}
+.order-2 {order: 2;}
+.order-1 {order: 1;}
+
+//OFFSET
+@for $i from 1 through 12 {
+  @media (min-width: $sm) {
+    .offset-sm-#{$i} {
+      margin-left: 100%/12*$i;
+    }
+  }
+}
+@for $i from 1 through 12 {
+  @media (min-width: $md) {
+    .offset-md-#{$i} {
+      margin-left: 100%/12*$i;
+    }
+  }
+}
+@for $i from 1 through 12 {
+  @media (min-width: $lg) {
+    .offset-lg-#{$i} {
+      margin-left: 100%/12*$i;
+    }
+  }
+}
+@for $i from 1 through 12 {
+  @media (min-width: $xl) {
+    .offset-xl-#{$i} {
+      margin-left: 100%/12*$i;
+    }
+  }
+}
