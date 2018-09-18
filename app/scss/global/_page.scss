@@ -28,32 +28,27 @@ a {
 h1 {
   font-size: $h1FontSize;
   line-height: $h1LineHeight;
-  color: $h1Color;
+  font-weight: $h1FontWeight;
 }
 h2 {
   font-size: $h2FontSize;
   line-height: $h2LineHeight;
-  color: $h2Color;
 }
 h3 {
   font-size: $h3FontSize;
   line-height: $h3LineHeight;
-  color: $h3Color;
 }
 h4 {
   font-size: $h4FontSize;
   line-height: $h4LineHeight;
-  color: $h4Color;
 }
 h5 {
   font-size: $h5FontSize;
   line-height: $h5LineHeight;
-  color: $h5Color;
 }
 h6 {
   font-size: $h6FontSize;
   line-height: $h6LineHeight;
-  color: $h6Color;
 }
 img {
   width: inherit;
